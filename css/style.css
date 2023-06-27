@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 .result{
     text-align: center;
@@ -46,10 +47,10 @@
 .comment{
      padding-top: 40px;
 }
+
 .summary{
     border: 1px solid transparent;
     border-radius:10px;
-    
     width: 354px;
     height: 490px;
     margin: 15px 0;
@@ -63,6 +64,11 @@
     padding:20px;
     text-align: left;
      
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .border{
     border: 1px solid transparent;
@@ -99,11 +105,17 @@
     color: hsl(234, 85%, 45%);
     background-color:  hsl(221, 100%, 96%);
 }
-button{
+.summary .container button{
     color: hsl(0, 0%, 100%);
     border-style: none;
     border-radius: 25px;
-    padding:15px 120px;
-    margin: 10px 0;
-    background-color: hsl(224, 30%, 27%);
+    width: 80%;
+    padding: 15px 0;
+    margin: 0 auto;
+    background-color: rgb(48, 59, 90);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.summary .container button:hover{
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
